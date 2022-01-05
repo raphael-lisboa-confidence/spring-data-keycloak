@@ -10,14 +10,10 @@ import org.springframework.retry.annotation.EnableRetry;
 @SpringBootApplication
 @EnableJpaAuditing
 @EnableRetry
-public class Application extends SpringBootServletInitializer {
+public class Application  {
 
     public static void main(final String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
-    @Override
-    protected SpringApplicationBuilder configure(final SpringApplicationBuilder application) {
-        return application.sources(Application.class);
-    }
 }
